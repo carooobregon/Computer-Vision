@@ -54,7 +54,7 @@ def getTweetsDictionary(search_words):
     tweets = tw.Cursor(api.search,
                   q=search_words,
                   lang="en",
-                  since=date_since).items(100)
+                  since=date_since).items(1000)
     for tweet in tweets:
         sentiment_value, confidence = s.sentiment(tweet.text)
         
