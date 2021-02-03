@@ -1,27 +1,19 @@
 from flask import Flask, request, render_template
-import os
-import tweepy as tw
-import pandas as pd
-import sentiment_mod as s
 import json
-import pickle
 import twitterdata as twdata
-from tweepy import OAuthHandler
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud, STOPWORDS 
 
-app=Flask(__name__,template_folder='templates')
+app=Flask(__name__)
 @app.route("/")
 def home():
-    pos, neg = twdata.getPopularWordList("mcdonalds")
-    print(pos)
-    return render_template("pic.html", data=pos)
+    return render_template("index.html")
  
 @app.route('/', methods=['POST'])
 def my_form_post():
-    text = request.form['text']
+    text = request.form['tw_handle']
     processed_text = text.upper()
+    print("text")
     print(processed_text)
+    pos, neg = twdata.getPopularWordList(processed_text)
     return render_template("pic.html", data=pos)
     
 if __name__ == "__main__":
