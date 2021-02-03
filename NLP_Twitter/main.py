@@ -1,10 +1,6 @@
 from flask import Flask, request, render_template
 import json
-<<<<<<< HEAD
 import twdata as twdata
-=======
-import twitterdata as twdata
->>>>>>> 839308520b503e276b85ea71cbaa5a4920f8e7e4
 
 app=Flask(__name__)
 @app.route("/")
