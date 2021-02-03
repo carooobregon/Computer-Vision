@@ -1,17 +1,7 @@
 from flask import Flask, request, render_template
-import os
 import tweepy as tw
-import pandas as pd
 import sentiment_mod as s
-import json
 from tweepy import OAuthHandler
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud, STOPWORDS 
-
-consumer_key="RMwN469nFVYLhLk38JsgGjaLg"
-consumer_secret="LTiNnztJOmZDbYcVZQeM53GiTCGJAiv1HxVFj1Z8nWVluTX6v9"
-access_key="80962536-TesurxqdCeFDdMWQycsEWMfVIdeyoTNhNGb2npr6Y"
-access_secret="DyEWGEIZ5scsnbq6uvwSule0YAN5RXZFP21TnLX2ElcsU"
 
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_key, access_secret)
@@ -54,7 +44,7 @@ def getTweetsDictionary(search_words):
     tweets = tw.Cursor(api.search,
                   q=search_words,
                   lang="en",
-                  since=date_since).items(1000)
+                  since=date_since).items(100)
     for tweet in tweets:
         sentiment_value, confidence = s.sentiment(tweet.text)
         
