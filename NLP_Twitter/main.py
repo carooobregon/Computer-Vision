@@ -13,8 +13,14 @@ def my_form_post():
     processed_text = text.upper()
     print("text")
     print(processed_text)
+    print(request.form)
     pos, neg = twdata.getPopularWordList(processed_text)
-    return render_template("pic.html", data=pos)
+    if 'positive-rev' in request.form:
+        data = pos
+        print("positive")
+    else:
+        data = neg
+    return render_template("pic.html", data=data)
     
 if __name__ == "__main__":
     app.run(debug=True)
