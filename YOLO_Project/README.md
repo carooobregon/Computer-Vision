@@ -8,7 +8,7 @@ YOLO: https://pjreddie.com/darknet/yolo/
 
 ### ¿Cómo funciona?
 
-Entrenando al sistema con 300 imágenes de aprendizaje y 50 de prueba, se desarrolla una capacidad alta para determinar si un objeto se encuentra presente. Para esto se descarga un dataset de la web, se cambia el formato del mismo para ser legible por YOLO y se juega con el repositorio **Darknet** para hacer uso de sus funciones auxiliares a la hora de guradar y leer datos.
+Entrenando al sistema con 300 imágenes de aprendizaje y 50 de prueba, se desarrolla una capacidad alta para determinar si un objeto se encuentra presente en una visualización digital. Para esto se descarga un dataset de la web, se cambia el formato del mismo para ser legible por YOLO y se juega con el repositorio **Darknet** para hacer uso de sus funciones auxiliares a la hora de guradar y leer datos.
 
 ### ¿Quién puede usar este repositorio?
 
