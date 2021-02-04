@@ -2,7 +2,7 @@
 
 ### ¿Qué es este proyecto?
 
-Con el modelo de detección de objetos **YOLO (You Only Look Once)**, hemos realizado un sistema de visión capaz de identificar y diferenciar objetos (en nuestro caso **manzanas y naranjas**) presentes en imágenes y videos por medio de un entrenamiento en el cual se le alimenta al sistema con datos de aprendizaje y prueba.
+Con el modelo de detección de objetos **YOLO (You Only Look Once)**, hemos realizado un sistema de visión capaz de identificar y diferenciar entre objetos (en nuestro caso **manzanas y naranjas**) presentes en imágenes y videos por medio de un entrenamiento en el cual se le alimenta al sistema con datos de aprendizaje y prueba.
 
 YOLO: https://pjreddie.com/darknet/yolo/
 
