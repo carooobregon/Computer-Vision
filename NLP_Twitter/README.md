@@ -16,3 +16,13 @@ Quien sea que esté interesado en ver los patrones de sentimiento de los usuario
 ### ¿Cuál es el objetivo de este proyecto?
 
 Usar herramientas modernas como NLP para entender el comportamiento humano y los sentimientos de las personas en redes sociales como Twitter
+
+### ¿Cómo corro este proyecto?
+
+- Corre el notebook "Combined Algorithms"
+- Crea un archivo twitterkeys.py con tus API keys de Twitter
+- Corre el archivo main.py para ver la interfaz web en http://localhost:5000/
+
+```bash
+run main.py
+```
