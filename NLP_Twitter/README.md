@@ -24,5 +24,5 @@ Usar herramientas modernas como NLP para entender el comportamiento humano y los
 - Corre el archivo main.py para ver la interfaz web en http://localhost:5000/
 
 ```bash
-run main.py
+python3 main.py
 ```
